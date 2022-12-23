@@ -1,0 +1,12 @@
+.sale{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .title{
+        width: 100%;
+        font-size: 25px;
+        font-weight: 700;
+        color: #333;
+    }
+}

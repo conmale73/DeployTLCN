@@ -1,0 +1,84 @@
+.heading {
+    color: #000;
+    background-color: #fff;
+    font-size: 1.4rem;
+    @mixin d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 240px;
+        height: 44px;
+        cursor: pointer;
+    }
+    .top {
+        height: 50px;
+        width: 100%;
+        @include d-flex;
+        .wrap {
+            margin-top: 20px;
+            width: 1200px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .tools {
+            display: flex;
+            .cart {
+                margin: 10px;
+            }
+            .login{
+                margin-left: 10px;
+                margin-top: 11px;
+                
+            }
+            .profile{
+                margin-top: 11px;
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        height: 64px;
+        nav {
+            @include d-flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            .item {
+                @include d-flex;
+                gap: 4px;
+                border-radius: 10px;
+                position: relative;
+            }
+            .item:hover {
+                color: rgb(243, 120, 120);
+            }
+        }
+        nav .item::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: rgb(243, 120, 120);
+            bottom: -10px;
+            transition: all 0.3s ease-in-out;
+        }
+        nav .item:hover::after {
+            width: 100%;
+        }
+    }
+}
+#tippy-5 {
+    inset: 1px 2px auto 10px !important;
+    margin: -9px !important;
+}
+.tippy-arrow::before {
+    display: none;
+}

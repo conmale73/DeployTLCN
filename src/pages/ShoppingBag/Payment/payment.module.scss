@@ -1,0 +1,41 @@
+.payment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .subtotal {
+        span {
+            float: right;
+        }
+    }
+    .total {
+        font-size: 2rem;
+        font-weight: bold;
+        span {
+            float: right;
+        }
+    }
+    .button {
+        width: 100%;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        background: #000;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+        &:hover {
+            background: rgb(48, 47, 47);
+        }
+    }
+}

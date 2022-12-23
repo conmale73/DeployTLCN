@@ -1,0 +1,20 @@
+.sizePicker{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 16px;
+    .sizeItem{
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .sizeItem:hover{
+        border-color: #007ACC;
+        cursor: pointer;
+    }
+}

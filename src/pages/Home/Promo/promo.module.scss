@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=SackersGothicStd');
+
+.promo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px #333;
+    .container{
+        width: 31%;
+        .title{
+            font-family: 'SackersGothicStd';
+            font-size: 20px;
+        }
+    }
+    .container:hover{
+        .title{
+            color: #007ACC;
+        }
+    }
+
+}

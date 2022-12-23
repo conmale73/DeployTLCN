@@ -1,0 +1,21 @@
+.filter{
+    display: flex;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    .option{
+        margin: 0 10px 0 10px;
+        padding: 5px 10px;
+        justify-content: center;
+        border: 1px solid rgb(128, 126, 126);
+        border-radius: 5px;
+        cursor: pointer;
+        
+        span{
+            margin-left: 10px;
+            float: right;
+        }
+    }
+    .option:hover{
+        border-color: #007ACC;
+    }
+}

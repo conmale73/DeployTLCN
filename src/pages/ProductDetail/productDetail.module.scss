@@ -1,0 +1,140 @@
+.productDetail {
+    width: 1240px;
+    margin: 0 auto;
+
+    .infoContainer {
+        max-width: 1240px;
+        display: flex;
+        .left {
+            float: left;
+            width: 50%;
+        }
+        .right {
+            float: right;
+            width: 50%;
+        }
+    }
+
+    .commentSection {
+        max-width: 1240px;
+        margin: 0 auto;
+        .bigInput {
+            border: 1px solid #dadada;
+            textarea {
+                width: 100%;
+                height: 100px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0 0 10px 0;
+                font-size: 20px;
+            }
+            button {
+                padding: 5px 25px;
+                font-size: 14px;
+                color: #fff;
+                text-transform: uppercase;
+                border-radius: 4px;
+                background: #000;
+                margin: 0 0 10px 10px;
+            }
+            button:hover {
+                background: #353535;
+            }
+        }
+        .counter {
+            display: flex;
+            p {
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0 20px 0 0;
+            }
+            .checkbox {
+                input {
+                    margin: 0 10px 0 0;
+                    width: 18px;
+                    height: 18px;
+                }
+                label {
+                    font-size: 20px;
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            height: fit-content;
+            margin: 0 0 20px 0;
+            .comment {
+                margin: 0 0 40px 0;
+                .name {
+                    display: flex;
+                    .avatar {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 10px 0 0;
+                        background-color: #dddddd;
+                    }
+                    .avatarAdmin{
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 10px 0 0;
+                        color: #fff;
+                        background-color: rgb(101 163 13);
+                    }
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: fit-content;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+                .cmtContent {
+                    margin: 10px 0 10px 0;
+                    p {
+                        font-size: 17px;
+                    }
+                }
+                .date {
+                    display: flex;
+                    .button {
+                        color: #007acc;
+                        cursor: pointer;
+                    }
+                    span {
+                        font-size: 15px;
+                        margin: 0 0 0 10px;
+                    }
+                }
+                form input {
+                    width: 100%;
+                    height: 50px;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin: 0 0 10px 0;
+                    font-size: 18px;
+                }
+                form button{
+                    padding: 5px 25px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 4px;
+                    background: #000;
+
+                    &:hover {
+                        background: #353535;
+                    }
+                }
+            }
+        }
+    }
+}

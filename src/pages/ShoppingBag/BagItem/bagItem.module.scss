@@ -1,0 +1,83 @@
+.bagItem{
+    .container{
+        display: flex;
+        width: 100%;
+        margin: 0 0 20px 0;
+        .image{
+            width: 100px;
+            height: 130px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: fit;
+            }
+        }
+        .bagItemInfo{
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 0 16px;
+
+            .designer{
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                margin: 0 0 4px 0;
+            }
+            .name{
+                font-size: 14px;
+                font-weight: 400;
+                color: #000;
+                margin: 0 0 15px 0;
+            }
+            .price{
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+                margin: 0 0 15px 0;
+                .priceBefore{
+                    text-decoration: line-through;
+                    font-weight: 200;
+                    font-size: 14px;
+                }
+                span{
+                    margin-left: 10px;
+                    text-decoration: line-through;
+                    font-size: 14px;
+                }
+            }
+            .size{
+                font-size: 15px;
+                font-weight: 400;
+                color: #000;
+                margin: 0 0 15px 0;
+            }
+            .quantity{
+                display: flex;
+                align-items: center;
+                .quantityTitle{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #000;
+                    margin: 0 10px 0 0;
+                }
+                .quantityLabel{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #000;
+                    margin: 0 10px 0 0;
+                }
+                
+                
+            }
+            .removeItem{
+                width: fit-content;
+                font-size: 15px;
+                font-weight: 400;
+                color: #000;
+                margin: 15px 0 15px 0;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

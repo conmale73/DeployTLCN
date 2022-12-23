@@ -1,0 +1,17 @@
+.shoppingBag{
+    max-width: 1240px;
+    margin: 0 auto;
+    .container{
+        width: 100%;
+        display: flex;
+
+        .bagItems{
+            display: block;
+            width: 75%;
+        }
+        .payment{
+            display: block;
+            width: 25%;
+        }
+    }
+}
